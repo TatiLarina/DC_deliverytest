@@ -6,7 +6,8 @@ branches:
   only:
     - main  # ветка git
 
-build: off  # будем использовать свой скрипт сборки
+environment:
+  nodejs_version: "0.12"
 
 install:
   - ps: Install-Product node $env:nodejs_version
