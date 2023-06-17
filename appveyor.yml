@@ -9,7 +9,6 @@ branches:
 build: off  # будем использовать свой скрипт сборки
 
 install:
-  - choco install googlechrome
   - ps: Install-Product node $env:nodejs_version
   - node --version
   - npm --version
